@@ -1,0 +1,22 @@
+[GLOBAL]
+pants_version = "2.12.0"
+backend_packages.add = [
+  'pants.backend.python',
+  "pants.backend.python.mixed_interpreter_constraints",
+  "pants.backend.awslambda.python",
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[source]
+root_patterns = ["/"]
+marker_filenames = ["manage.py"]
+
+[python]
+interpreter_constraints = ["CPython>=3.9"]
+enable_resolves = true
+lockfile_generator = "pex"
+
+[python-infer]
+string_imports = true

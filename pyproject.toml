@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tarun-error-reproduce"
+version = "0.1.0"
+description = ""
+authors = ["Tarun Tyagi <mail2ttarun@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tarun_error_reproduce"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.1"
+djangorestframework = "^3.13.1"
+apig-wsgi = "^2.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
